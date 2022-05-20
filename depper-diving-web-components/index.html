@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <style>
+:root {
+  --primary-color: #a4fcda
+}
+      div {
+        border: 2px solid orange;
+      }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+  </head>
+  <body>
+    <p> <kvm-tooltip  class="import">
+        <span class="highlight"> Web components is amazing </span>
+      </kvm-tooltip>
+    </p>
+    <!--- nao pode ter espaco aqui para slot aparecer o valor default --->
+    <kvm-tooltip text="This text is dinamic"></kvm-tooltip>
+    <div>This does not get the web component style </div>
+    <a class="link" is="kvm-confirm-link" href="https://www.google.com"   >Google</a>
+  </body>
+</html>
