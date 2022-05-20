@@ -21,9 +21,8 @@ Entender principais conceitos do web componenets </br>
 - Web Componentes trabalha com conceito do [Shadow Dom](https://www.treinaweb.com.br/blog/o-que-e-dom-virtual-dom-e-shadow-dom) assim evita qualquer sobscrita de css,tag que utliza esse concieto e a <video>
 - Para ativar o Shadow Dom utilizamos objeto  attachSHadow({mode: "open"})  
 - Para HTML entender que isto e um custom elemento , usamos objeto customElements e seu metodo define
-  
-  ``` js
  
+``` js 
 class ToolTip extends HTMLElement {
   constructor() {
     //super e para herdar todos os metodos do HTMLElement
@@ -36,7 +35,7 @@ class ToolTip extends HTMLElement {
 //primeiro argumento e o nome da tag,segundo a classe
 customElements.define("kvm-tooltip", ToolTip);
  
- ```
+```
   
  - Outra feature interessante de encapsulamento sao os templates,com ele conseguimos criar elementos que nao sao renderizados na pagina  assim que e carregada,mas conseguimos instancia em tempo de execucao no Javascript
  - Tem dois metodos para realizar o uso de template,abaixo esta exemplo de uma delas
