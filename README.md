@@ -66,7 +66,7 @@ class ToolTip extends HTMLElement{
     <slot></slot>  
   <template>
   
-  ```
+```
   
  - Outra maneira de iniciar templates e usando o recurso de javascript template string
  - Desta maneira nao preciso usar a tag <template> </template>   
