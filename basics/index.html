@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <style>
+div {
+  border: 2px solid orange;
+}
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+  </head>
+  <body>
+    <!--- template e um mecanismo de emcapsular um conteudo do lado do cliente que nao e redenrizado
+      quando a pagina carrega mas pode ser instanciado em tempo de execuacao usando javascript --->
+      <!-- <template id="span-tooltip"> -->
+      <!------ slot permite nos adicionarmos filhos nas nossas tags
+        a partir de agora kvm--tooltip permite adicoinar filhos --->
+        <!-- <slot>Some default </slot> <span>(?)</span> -->
+        <!-- </template> -->
+        <!--- so consigo adicionar filhos aqui com slot  -->
+        <p><kvm-tooltip> Web components is amazing </kvm-tooltip></p>
+        <!--- nao pode ter espaco aqui para slot aparecer o valor default --->
+        <kvm-tooltip text="This text is dinamic"></kvm-tooltip>
+        <div>This does not get the web component style </div>
+        <a class="link" is="kvm-confirm-link" href="https://www.google.com"   >Google</a>
+  </body>
+</html>
