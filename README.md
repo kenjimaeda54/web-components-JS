@@ -4,7 +4,7 @@ criação de elementos customizados reutilizáveis — com a
 funcionalidade separada do resto do seu código — e podem ser utilizados em suas aplicações web.
 
 
-## Motivacao 
+##  Motivação
 Entender principais conceitos do web componentes </br>
 - Elementos customizados
 - Shadow DOM
